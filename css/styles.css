@@ -838,6 +838,11 @@ html
           margin-right: 0;
     }
 
+    .main-container
+     {
+           padding: 0;
+     }
+
 }
 
 @media only screen and ( max-width: 400px)
@@ -942,5 +947,10 @@ html
      .project-card .project-stack-block
      {
            font-size: 1rem;
+     }
+
+     .main-container
+     {
+           padding: 0;
      }
 }
