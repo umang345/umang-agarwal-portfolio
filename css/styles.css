@@ -169,7 +169,7 @@ html
 
 .about-container
 {
-     height: 100vh;
+     min-height: 100vh;
      margin-top: -20vh;
      position: relative;
      z-index: 9;
@@ -840,7 +840,7 @@ html
 
 }
 
-@media only screen and ( max-width: 450px)
+@media only screen and ( max-width: 400px)
 {
      .intro-text-box .name-label
      {
@@ -893,7 +893,7 @@ html
      }
 
      .tech-stack-symbols img{
-          width: 1.5rem;
+          width: 1rem;
           margin: 1rem;
     }
 
@@ -923,6 +923,24 @@ html
 
      .project-portfolio-label
      {
-          font-size: 2rem;     
+          font-size: 1.5rem;     
+     }
+
+     .project-card
+     {
+          width: 14rem;
+          height: 16rem;
+          margin-bottom: 2rem;
+          margin-right: 0;
+     }
+
+     .project-card .project-name-block span
+     {
+           font-size: 1.4rem;
+     }
+
+     .project-card .project-stack-block
+     {
+           font-size: 1rem;
      }
 }
