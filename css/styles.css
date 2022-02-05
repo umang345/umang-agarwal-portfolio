@@ -1,0 +1,928 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+}
+
+.flex
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.w100
+{
+    width: 100%;     
+}
+
+.w40
+{
+      width: 40%;
+}
+.w60
+{
+      width: 60%;
+}
+
+.w50
+{
+      width: 50%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none !important;
+}
+
+html
+{
+     scroll-behavior: smooth;
+}
+
+.main-container
+{
+     padding: 1.5rem;
+}
+
+.intro-container {
+    background: #1133C3;
+    position: relative;
+    z-index: 10;
+    background: -webkit-linear-gradient(left, #1133C3, #67B0E7);
+    background: -moz-linear-gradient(left, #1133C3, #67B0E7);
+    background: linear-gradient(to right, #1133C3, #67B0E7);
+
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: 95vh;
+}
+
+.intro-text-box
+{
+    display: flex;
+    justify-content: center;     
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.intro-text-box .name-label
+{
+     font-family: 'Lobster Two', cursive;
+     color: #fff;
+     font-size: 5rem;
+     margin-top: 8rem;
+}
+
+.intro-text-box .description-label
+{
+     font-family: 'Bree Serif', serif;
+     color: #fff;
+     font-size: 2rem;
+}
+
+.floating-buttons
+{
+     display: flex;
+     margin-top: 3rem;
+     justify-content: center;
+}
+
+.floating-buttons a,
+.floating-buttons a .handle-container{
+      text-decoration: none;
+}
+
+.handle-container
+{
+     display: flex;
+     border: 2px solid #fff;
+     padding: 0.2rem 0.5rem;
+     color: #FFF;
+     width: 10rem;
+     border-radius: 0.5rem;
+     justify-content: center;
+     margin-right: 1rem;
+}
+
+.handle-container .handle-label
+{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.handle-container .handle-icon
+{
+    width: 25%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.handle-container:hover
+{
+     cursor: pointer;
+     background-color: #fff;
+     color: #1133C3;
+     text-decoration: none;
+}
+
+.see-projects-button
+{
+     margin-top: 6rem;
+}
+
+.see-projects-button a
+{
+    text-decoration: none;
+    color: #1133C3;
+    border: 2px solid white;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-family: 'Bree Serif', serif;
+    margin: 0rem 1rem;
+}
+
+.see-projects-button a:hover
+{
+     cursor: pointer;
+     text-decoration: none;
+     border: 5px solid #fff;
+     color: #fff;
+     background-color: transparent;
+}
+
+.about-container
+{
+     height: 100vh;
+     margin-top: -20vh;
+     position: relative;
+     z-index: 9;
+
+     background: #C4F7B7;
+    background: -webkit-linear-gradient(right, #C4F7B7, #E2F2DA);
+    background: -moz-linear-gradient(right, #C4F7B7, #E2F2DA);
+    background: linear-gradient(to left, #C4F7B7, #E2F2DA);
+
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.space-row
+{
+      height: 22vh;
+}
+
+.about-row
+{
+      height: 60vh;
+      /* border: 2px solid red; */
+      display: flex;
+}
+
+.about-me
+{
+     /* border: 2px solid brown; */
+     height: 100%;
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 0rem 3rem;
+}
+
+.about-me .about-heading
+{
+      font-size: 2rem;
+      font-family: 'Short Stack', cursive;
+      color: darkblue;
+}
+
+.about-me h3{
+     margin-top: 1rem;
+     font-size: 1.3rem;
+     font-family: 'Bree Serif', serif;
+}
+
+.tech-stack-symbols
+{
+     /* border: 2px solid orange; */
+     height: 100%;
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.tech-stack-symbols img{
+      width: 8rem;
+      margin: 1rem;
+}
+
+.tech-stack-symbols img:hover{
+     transform: scale(1.4);
+     cursor: pointer;
+}
+
+.contact-container
+{
+      height: 30vh;
+      background-color: black;
+      padding: 1rem;
+}
+
+.contact-blocks-row
+{
+      display: flex;
+      height: 100%;
+      justify-content: space-evenly;
+}
+
+.email-block
+{
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 100%;
+}
+
+.email-block h3{
+     font-family: 'Bree Serif', serif;
+     border-bottom: 2px solid #fff;
+     padding: 0.2rem;
+     display: inline-block;
+}
+ 
+.contact-blocks-row .handle-block
+{
+     display: flex;
+     width: 50%;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.email-block h4{
+     font-family: 'Bree Serif', serif;
+}
+
+.contact-handle-container
+{
+     display: flex;
+     border: 2px solid #fff;
+     padding: 0.2rem 0.5rem;
+     color: #FFF;
+     width: 10rem;
+     border-radius: 0.5rem;
+     justify-content: center;
+     margin-right: 1rem;
+}
+
+.contact-handle-container .contact-handle-label
+{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contact-handle-container .contact-handle-icon
+{
+    width: 25%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.contact-handle-container:hover
+{
+     cursor: pointer;
+     background-color: #fff;
+     color: #1133C3;
+     text-decoration: none;
+}
+
+.project-portfolio-container
+{
+     min-height: 100vh;
+     margin-top: -20vh;
+     position: relative;
+     z-index: 8;
+     padding-bottom: 2rem;
+
+     background: #FFFFFF;
+     background: -webkit-linear-gradient(right, #FFFFFF, #E087EB);
+     background: -moz-linear-gradient(right, #FFFFFF, #E087EB);
+     background: linear-gradient(to left, #FFFFFF, #E087EB);
+}
+
+.cards
+{
+      padding: 1rem 6rem;
+      display: flex;
+      justify-content: center;
+      
+}
+
+.project-portfolio-label
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+     font-family: 'Short Stack', cursive;
+     margin-bottom: 3rem;
+}
+
+.project-card
+{
+     height: 22rem;
+     width: 20rem;
+     margin-right: 3rem;
+     display: flex;
+     flex-direction: column;
+     background-color: #fff;
+}
+
+.project-card .project-name-block
+{
+      width: 100%;
+      height: 30%;
+
+      background: #75B7FA;
+      background: -webkit-linear-gradient(left, #75B7FA, #2C6CE1);
+      background: -moz-linear-gradient(left, #75B7FA, #2C6CE1);
+      background: linear-gradient(to right, #75B7FA, #2C6CE1);
+
+      -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.project-card .project-name-block span
+{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.project-card .project-stack-block
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 1.5rem;
+}
+
+.project-card .project-stack-block .stack-row
+{
+     border-bottom: 1px solid gray;
+     width: 10rem;
+}
+
+.project-card .project-stack-block
+{
+      width: 100%;
+      height: 50%;
+}
+.project-card .project-button-block
+{
+     width: 100%; 
+     height: 20%;     
+     display: flex;
+}
+
+.project-card .project-button-block a{
+      background-color: #000;
+      font-size: 1.2rem;
+}
+
+.project-card .project-button-block a:hover{
+     background-color: #fff;
+     color: #007bff;
+     border: 5px solid black;
+     font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 960px)
+{
+     .contact-blocks-row .handle-block
+     {
+          flex-direction: column;
+     }
+
+     .contact-blocks-row .handle-block .contact-handle-container
+     {
+          margin-bottom: 0.2rem;
+          width: 20rem;
+     }
+
+     .project-card
+     {
+          height: 20rem;
+          width: 18rem;
+     }
+
+     .project-card .project-stack-block
+     {
+          font-size: 1rem;
+     }
+
+     .project-card .project-name-block span
+     {
+           font-size: 1.5rem;
+     }
+
+     .project-card .project-button-block a
+     {
+           font-size: 0.8rem;
+     }
+}
+
+@media only screen and (min-width: 960px)
+{
+     .tech-stack-symbols img{
+          width: 6rem;
+          margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+{
+     .tech-stack-symbols img{
+          width: 5rem;
+          margin: 1rem;
+    }
+
+    .about-me .about-heading
+     {
+          font-size: 1.2rem;
+          font-family: 'Short Stack', cursive;
+          color: darkblue;
+     }
+
+     .about-me h3{
+          margin-top: 0.8rem;
+          font-size: 1rem;
+          font-family: 'Bree Serif', serif;
+     }
+
+     .intro-text-box .name-label
+     {
+          font-size: 4rem;
+     }
+
+     .intro-text-box .description-label
+     {
+          font-size: 1.5rem;
+     }
+
+     .contact-blocks-row
+     {
+           flex-direction: column;
+     }
+
+     .email-block
+     {
+           width: 100%;
+     }
+
+     .contact-blocks-row .handle-block 
+     {
+          width: 100%;
+     }
+
+     .contact-blocks-row .handle-block .contact-handle-container
+     {
+          margin-bottom: 0.2rem;
+          width: 10rem;
+     }
+
+     .project-card
+     {
+          height: 18rem;
+          width: 18rem;
+     }
+
+     .project-card .project-stack-block
+     {
+          font-size: 1rem;
+     }
+
+     .project-card .project-name-block span
+     {
+           font-size: 1rem;
+     }
+
+     .project-card .project-button-block a
+     {
+           font-size: 0.8rem;
+     }
+}
+
+@media only screen and ( min-width: 576px) and ( max-width: 768px)
+{
+     .intro-text-box .name-label
+     {
+          font-size: 3.5rem;
+     }
+
+     .intro-text-box .description-label
+     {
+          font-size: 1.5rem;
+     }
+
+     .floating-buttons
+     {
+          flex-direction: column;
+          margin-top: 1rem;
+     }
+
+     .floating-buttons a
+     {
+          margin-bottom: 0.4rem;
+     }
+
+     .see-projects-button
+     {
+          margin-top: 2rem;
+     }
+
+     .see-projects-button a
+     {
+          padding: 0.5rem 1rem;
+          margin: 0rem 1rem;
+     }
+
+     .handle-container
+     {
+          padding: 0.2rem 0.5rem;
+          width: 8rem;
+          justify-content: center;
+          margin-right: 1rem;
+     }
+
+     .handle-container .handle-label
+     {
+          font-size: 1rem;
+     }
+
+     .handle-container .handle-icon
+     {
+          font-size: 1.5rem;
+     }
+
+     .about-row
+     {
+          flex-direction: column;
+     }
+
+     .about-me
+     {
+          
+          /* height: 50%; */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0rem 3rem;
+     }
+
+     .about-me .about-heading
+     {
+          font-size: 1rem;
+          font-family: 'Short Stack', cursive;
+          color: darkblue;
+     }
+
+     .about-me h3{
+          margin-top: 0.5rem;
+          font-size: 1rem;
+          font-family: 'Bree Serif', serif;
+     }
+
+     .tech-stack-symbols img{
+          width: 3.5rem;
+          margin: 1rem;
+    }
+
+     .tech-stack-symbols
+     {
+          /* border: 2px solid orange; */
+          /* height: 50%; */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0rem 3rem;
+     }
+
+     .contact-blocks-row
+     {
+           flex-direction: column;
+     }
+
+     .email-block
+     {
+           width: 100%;
+     }
+
+     .contact-blocks-row .handle-block 
+     {
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .contact-blocks-row .handle-block .contact-handle-container
+     {
+          margin-bottom: 0.2rem;
+          width: 10rem;
+     }
+
+     .contact-container
+     {
+           height: 50vh;
+     }
+
+     .cards{
+           flex-direction: column;
+           align-items: center;
+     }
+
+     .project-card
+     {
+           width: 30rem;
+           margin-bottom: 2rem;
+           margin-right: 0;
+     }
+}
+
+@media only screen and ( max-width: 576px)
+{
+     .intro-text-box .name-label
+     {
+          font-size: 3rem;
+     }
+
+     .intro-text-box .description-label
+     {
+          font-size: 1rem;
+     }
+
+     .floating-buttons
+     {
+          flex-direction: column;
+          margin-top: 1rem;
+     }
+
+     .floating-buttons a
+     {
+          margin-bottom: 0.2rem;
+     }
+
+     .see-projects-button
+     {
+          margin-top: 1.5rem;
+     }
+
+     .see-projects-button a
+     {
+          padding: 0.5rem 1rem;
+          margin: 0rem 1rem;
+     }
+
+     .handle-container
+     {
+          padding: 0.2rem 0.5rem;
+          width: 8rem;
+          justify-content: center;
+          margin-right: 0;
+     }
+
+     .handle-container .handle-label
+     {
+          font-size: 1rem;
+     }
+
+     .handle-container .handle-icon
+     {
+          font-size: 1.5rem;
+     }
+
+     .about-row
+     {
+          flex-direction: column;
+     }
+
+     .about-me
+     {
+          
+          /* height: 50%; */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0rem 3rem;
+     }
+
+     .about-me .about-heading
+     {
+          font-size: 1rem;
+          font-family: 'Short Stack', cursive;
+          color: darkblue;
+     }
+
+     .about-me h3{
+          margin-top: 0.5rem;
+          font-size: 0.8rem;
+          font-family: 'Bree Serif', serif;
+     }
+     .about-me p{
+          font-size: 0.6rem;
+     }
+
+     .tech-stack-symbols img{
+          width: 2.5rem;
+          margin: 1rem;
+    }
+
+     .tech-stack-symbols
+     {
+          /* border: 2px solid orange; */
+          /* height: 50%; */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0rem 3rem;
+     }
+
+     .contact-blocks-row
+     {
+           flex-direction: column;
+     }
+
+     .email-block
+     {
+           width: 100%;
+     }
+
+     .contact-blocks-row .handle-block 
+     {
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .contact-blocks-row .handle-block .contact-handle-container
+     {
+          margin-bottom: 0.2rem;
+          width: 10rem;
+     }
+
+     .contact-container
+     {
+           height: 50vh;
+     }
+
+     .email-block h3{
+          font-size: 1.5rem;
+     }
+
+     .email-block h4{
+           font-size: 1.3rem;
+     }
+
+     .cards{
+          flex-direction: column;
+          align-items: center;
+    }
+
+    .project-card
+    {
+          width: 20rem;
+          margin-bottom: 2rem;
+          margin-right: 0;
+    }
+
+}
+
+@media only screen and ( max-width: 450px)
+{
+     .intro-text-box .name-label
+     {
+          font-size: 2rem;
+     }
+
+     .intro-text-box .description-label
+     {
+          font-size: 0.8rem;
+     }
+
+     .floating-buttons
+     {
+          flex-direction: column;
+          margin-top: 1rem;
+     }
+
+     .floating-buttons a
+     {
+          margin-bottom: 0.2rem;
+     }
+
+     .see-projects-button
+     {
+          margin-top: 1.5rem;
+     }
+
+     .see-projects-button a
+     {
+          padding: 0.5rem 1rem;
+          margin: 0rem 1rem;
+     }
+
+     .handle-container
+     {
+          padding: 0.2rem 0.5rem;
+          width: 8rem;
+          justify-content: center;
+          margin-right: 0;
+     }
+
+     .handle-container .handle-label
+     {
+          font-size: 1rem;
+     }
+
+     .handle-container .handle-icon
+     {
+          font-size: 1.5rem;
+     }
+
+     .tech-stack-symbols img{
+          width: 1.5rem;
+          margin: 1rem;
+    }
+
+     .tech-stack-symbols
+     {
+          /* border: 2px solid orange; */
+          /* height: 50%; */
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0rem 3rem;
+     }
+
+     .contact-container
+     {
+           height: 50vh;
+     }
+
+     .email-block h3{
+          font-size: 1.2rem;
+     }
+
+     .email-block h4{
+           font-size: 1rem;
+     }
+
+     .project-portfolio-label
+     {
+          font-size: 2rem;     
+     }
+}
